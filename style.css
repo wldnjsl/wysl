@@ -1,0 +1,51 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    color:white;
+}
+h1 {
+    color:#bbb;
+    padding-left:70px
+}
+main {
+    width:300px;
+}
+input {
+    width:100%;
+    text-align: right;
+    border:none;
+    background:#5B5B5D;
+    padding-right:1rem;
+    font-size:2.7rem;
+}
+
+input, button {
+    height:70px;
+    outline: none;
+}
+button {
+    background: rgb(237, 162, 83);
+    border:solid 1px #fff;
+    font-size:1.3rem
+}
+button:nth-child(4n+2), button:last-child{
+    background-color:rgba(46, 30, 0, 0.686);
+}
+
+.button-wrap {
+    display:grid;
+    /* 한줄에 4개씩 , 모두 동일한 비율 적용 (1:1:1:1) */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button:hover {
+    opacity: .6;
+}
+.ac {
+    grid-column: 1/4;
+    background-color:rgb(46, 30, 0);
+}
+.zero {
+    grid-column: 1/3;
+}
+
